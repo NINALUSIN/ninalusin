@@ -35,7 +35,7 @@ $configData = Helper::appClasses();
             <h4 class="card-title pb-xl-2">Congratulations <strong> John!</strong>🎉</h4>
             <p class="mb-0">You have done <span class="fw-semibold">68%</span>😎 more sales today.</p>
             <p>Check your new badge in your profile.
-            Commit test.
+            Commit test. Another commit test.
             @isset($pageConfigs)
             <br>
               {{ $pageConfigs['variableTest'] }}<br>
