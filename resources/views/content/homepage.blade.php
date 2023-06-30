@@ -30,26 +30,24 @@ $configData = Helper::appClasses();
   <div class="col-md-12 col-lg-8">
     <div class="card">
       <div class="d-flex align-items-end row">
-        <div class="col-md-6 order-2 order-md-1">
+        <div class="col-md-12 order-2 order-md-1">
           <div class="card-body">
             <h4 class="card-title pb-xl-2">Congratulations <strong> John!</strong>🎉</h4>
             <p class="mb-0">You have done <span class="fw-semibold">68%</span>😎 more sales today.</p>
-            <p>Check your new badge in your profile.
-            Commit test. Another commit test.
+
+
+            View change test.
+
             @isset($pageConfigs)
-            <br>
-              {{ $pageConfigs['variableTest'] }}<br>
-              {{ $pageConfigs['connection_test'][0]['text'] }}
+
+            <p class="mb-0">Variable test: <span class="fw-semibold"> {{ $pageConfigs['variableTest'] }}</span></p>
+            <p class="mb-0">DB connection test: <span class="fw-semibold"> {{ $pageConfigs['connection_test'][0]['text'] }}</span></p>
             @endisset
             </p>
             <a href="javascript:;" class="btn btn-primary">View Profile</a>
           </div>
         </div>
-        <div class="col-md-6 text-center text-md-end order-1 order-md-2">
-          <div class="card-body pb-0 px-0 px-md-4 ps-0">
-            <img src="{{asset('assets/img/illustrations/illustration-john-'.$configData['style'].'.png')}}" height="180" alt="View Profile" data-app-light-img="illustrations/illustration-john-light.png" data-app-dark-img="illustrations/illustration-john-dark.png">
-          </div>
-        </div>
+
       </div>
     </div>
   </div>

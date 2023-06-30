@@ -18,7 +18,7 @@
           "slug": "dashboard-crm"
         },
         {
-          "url": "/",
+          "url": "/dashboard/analytics",
           "name": "Analytics",
           "icon": "menu-icon tf-icons mdi mdi-cart-outline",
           "slug": "dashboard-analytics"

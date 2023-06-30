@@ -10,7 +10,7 @@ class HomePage extends Controller
   public function index()
   {
     $connection_test = connection_test::all();;
-    $pageConfigs = ['variableTest' => 'Variable test successful! Change for commit.', 'connection_test'=>$connection_test];
+    $pageConfigs = ['variableTest' => 'Variable test successful!', 'connection_test'=>$connection_test];
     return view('content.homepage', ['pageConfigs' => $pageConfigs]);
   }
 }

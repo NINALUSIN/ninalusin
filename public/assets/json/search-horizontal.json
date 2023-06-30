@@ -3,7 +3,7 @@
     {
       "name": "Dashboard Analytics",
       "icon": "mdi-home-outline",
-      "url": "/"
+      "url": "/dashboard/analytics"
     },
     {
       "name": "Dashboard eCommerce",
