@@ -93,34 +93,6 @@ $configData = Helper::appClasses();
       </div>
     </div>
   </div>
-  <!--/ Sessions line chart -->
-
-  <!-- Total Transactions & Report Chart -->
-
-  <!-- Performance Chart -->
-
-  <!-- Project Statistics -->
-
-  <!--/ Project Statistics -->
-
-  <!-- Multiple widgets -->
-
-  <!--/ Multiple widgets -->
-
-  <!-- Sales Country Chart -->
-
-
-  <!-- Top Referral Source  -->
-
-  <!-- Weekly Sales Chart-->
-
-
-
-  <!-- visits By Day Chart-->
-
-  <!--/ visits By Day Chart-->
-
-  <!-- Activity Timeline -->
-
+ <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.
 </div>
 @endsection

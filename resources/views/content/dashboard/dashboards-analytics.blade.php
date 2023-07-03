@@ -37,7 +37,7 @@ $configData = Helper::appClasses();
             <p>Check your new badge in your profile.
 
             </p>
-            <a href="javascript:;" class="btn btn-primary">View Profile</a>
+            <a href="javascript;" class="btn btn-primary">View Profile</a>
           </div>
         </div>
         <div class="col-md-6 text-center text-md-end order-1 order-md-2">

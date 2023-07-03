@@ -3,7 +3,7 @@
 return [
   "creatorName" => "Pixinvent",
   "creatorUrl" => "https://pixinvent.com",
-  "templateName" => "Materialize",
+  "templateName" => "Nina Lušin",
   "templateSuffix" => "Bootstrap Admin Template",
   "templateVersion" => "1.2.2",
   "templateFree" => false,
