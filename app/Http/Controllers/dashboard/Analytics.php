@@ -11,7 +11,7 @@ class Analytics extends Controller
   public function index()
   {
 
-    $pageConfigs = ['variableTest' => 'Variable test successful! Change for commit.'];
-    return view('content.dashboard.dashboards-analytics', ['pageConfigs' => $pageConfigs]);
+
+    return view('content.dashboard.dashboards-analytics');
   }
 }
