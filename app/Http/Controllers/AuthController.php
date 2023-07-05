@@ -23,7 +23,7 @@ class AuthController extends Controller
   public function test(Request $request)
   {
 
-    Log::debug($request);
+    Log::info($request);
           return response()->json([
               'message' => 'Successfully tested API call!'
           ], 201);

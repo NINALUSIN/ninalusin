@@ -79,7 +79,8 @@ Route::get('/pages/misc-not-authorized', $controller_path . '\pages\MiscNotAutho
 Route::get('/pages/misc-server-error', $controller_path . '\pages\MiscServerError@index')->name('pages-misc-server-error');
 
 // authentication
-Route::get('/auth/login-basic', $controller_path . '\authentications\LoginBasic@index')->name('auth-login-basic');
+//Route::get('/auth/login-basic', $controller_path . '\authentications\LoginBasic@index')->name('auth-login-basic');
+Route::match(['get', 'post'], '/auth/login-basic',$controller_path . '\authentications\LoginBasic@index')->name('auth-login-basic');
 Route::get('/auth/login-cover', $controller_path . '\authentications\LoginCover@index')->name('auth-login-cover');
 Route::get('/auth/register-basic', $controller_path . '\authentications\RegisterBasic@index')->name('auth-register-basic');
 Route::get('/auth/register-cover', $controller_path . '\authentications\RegisterCover@index')->name('auth-register-cover');

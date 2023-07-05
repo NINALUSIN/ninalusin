@@ -9,16 +9,17 @@ use Illuminate\Support\Facades\Log;
 
 class LoginBasic extends Controller
 {
-  public function index()
+  public function index(Request $request)
   {
-    $test = new Request();
-    $test->replace(['test' => 'Test variable']);
 
 
-    $result = (new AuthController)->test($test);
+    $result = (new AuthController)->test($request);
     Log::debug($result);
 
     $pageConfigs = ['myLayout' => 'blank'];
     return view('content.authentications.auth-login-basic', ['pageConfigs' => $pageConfigs]);
   }
+
+
+
 }
