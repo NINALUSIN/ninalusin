@@ -9,8 +9,10 @@ class HomePage extends Controller
 {
   public function index()
   {
-    $connection_test = connection_test::all();;
+    $connection_test = connection_test::all();
     $pageConfigs = ['variableTest' => 'Variable test successful!', 'connection_test'=>$connection_test];
+
     return view('content.homepage', ['pageConfigs' => $pageConfigs]);
+
   }
 }

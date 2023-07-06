@@ -50,7 +50,7 @@ $customizerHidden = 'customizer-hide';
           <form id="formAuthentication" class="mb-3" action="{{url('/auth/login-basic')}}" method="post" enctype="multipart/form-data">
           @csrf
             <div class="form-floating form-floating-outline mb-3">
-              <input type="text" class="form-control" id="email" name="email-username" placeholder="Enter your email or username" autofocus>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email or username" autofocus>
               <label for="email">Email or Username</label>
             </div>
             <div class="mb-3">
@@ -64,6 +64,7 @@ $customizerHidden = 'customizer-hide';
                 </div>
               </div>
             </div>
+            <!--
             <div class="mb-3 d-flex justify-content-between">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="remember-me">
@@ -74,6 +75,16 @@ $customizerHidden = 'customizer-hide';
               <a href="{{url('auth/forgot-password-basic')}}" class="float-end mb-1">
                 <span>Forgot Password?</span>
               </a>
+            </div>
+-->
+            <div c  ss="mb-3 d-flex justify-content-between">
+            @isset($pageConfigs['message'])
+            <div class="alert alert-danger alert-dismissible" role="alert">
+              {{ $pageConfigs['message'] }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+              </button>
+            </div>
+            @endisset
             </div>
             <div class="mb-3">
               <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>

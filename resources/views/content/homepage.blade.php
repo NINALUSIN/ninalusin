@@ -38,11 +38,20 @@ $configData = Helper::appClasses();
 
             View change test.
 
-            @isset($pageConfigs)
+            @isset($pageConfigs['variableTest'])
 
             <p class="mb-0">Variable test: <span class="fw-semibold"> {{ $pageConfigs['variableTest'] }}</span></p>
             <p class="mb-0">DB connection test: <span class="fw-semibold"> {{ $pageConfigs['connection_test'][0]['text'] }}</span></p>
             @endisset
+
+            @if(Session::has('user_access_token'))
+
+            <div class="alert alert-success" role="alert">
+              Succesfully logged in!<br>
+              {{ Session::get('user_access_token')}}
+            </div>
+
+            @endif
             </p>
             <a href="javascript:;" class="btn btn-primary">View Profile</a>
           </div>
