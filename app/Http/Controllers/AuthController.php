@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+
 use Carbon\Carbon;
 use App\Models\User;
 use Validator;
@@ -23,7 +26,7 @@ class AuthController extends Controller
   public function test(Request $request)
   {
 
-    Log::info($request);
+
           return response()->json([
               'message' => 'Successfully tested API call!'
           ], 201);
@@ -67,6 +70,8 @@ class AuthController extends Controller
   */
   public function login(Request $request)
   {
+
+
     $request->validate([
       'email' => 'required|string|email',
       'password' => 'required|string',
@@ -76,9 +81,12 @@ class AuthController extends Controller
     $credentials = request(['email', 'password']);
     if(!Auth::attempt($credentials))
     {
+
       return response()->json([
-      'message' => 'Unauthorized'
+      'message' => 'Login not succesfull.'
       ], 401);
+
+
     }
 
     $user = $request->user();
@@ -90,6 +98,8 @@ class AuthController extends Controller
       'access_token' => $token,
       'token_type' => 'Bearer',
     ]);
+
+
   }
 
 
