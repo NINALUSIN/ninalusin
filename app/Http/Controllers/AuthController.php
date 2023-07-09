@@ -35,12 +35,21 @@ class AuthController extends Controller
 
   public function register(Request $request)
   {
-      $request->validate([
+    Log::debug('AuthController@register');
+    Log::debug($request);
+    /*$request->validate([
           'name' => 'required|string',
           'email' => 'required|string|email|unique:users',
           'password' => 'required|string|',
           'c_password'=>'required|same:password',
-      ]);
+      ]);*/
+      Log::info('--validated');
+      Log::info($request->validate([
+        'name' => 'required|string',
+        'email' => 'required|string|email|unique:users',
+        'password' => 'required|string|',
+        'c_password'=>'required|same:password',
+    ]));
 
       $user = new User([
           'name' => $request->name,
@@ -74,8 +83,7 @@ class AuthController extends Controller
 
     $request->validate([
       'email' => 'required|string|email',
-      'password' => 'required|string',
-      'remember_me' => 'boolean'
+      'password' => 'required|string'
     ]);
 
     $credentials = request(['email', 'password']);
