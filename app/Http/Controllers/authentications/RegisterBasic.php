@@ -12,15 +12,16 @@ class RegisterBasic extends Controller
 {
   public function index(Request $request)
   {
-    $pageConfigs = ['myLayout' => 'blank', 'test'=>'RegisterBasic@index'];
+    $pageConfigs = ['myLayout' => 'blank'];
 
 
     if($request->method() == 'POST')
     {
-      Log::debug('RegisterBasic@index/POST');
+
       $result = (new AuthController)->register($request);
-      Log::debug($result);
-      return redirect()->route('dashboard-homepage');
+      Log::info('(new AuthController)->register($request);');
+      Log::info($result);
+      return redirect()->route('auth-login-basic');
     }
     else{
 

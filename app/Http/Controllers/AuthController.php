@@ -35,21 +35,14 @@ class AuthController extends Controller
 
   public function register(Request $request)
   {
-    Log::debug('AuthController@register');
-    Log::debug($request);
-    /*$request->validate([
+
+    $validated = $request->validate([
           'name' => 'required|string',
           'email' => 'required|string|email|unique:users',
           'password' => 'required|string|',
           'c_password'=>'required|same:password',
-      ]);*/
-      Log::info('--validated');
-      Log::info($request->validate([
-        'name' => 'required|string',
-        'email' => 'required|string|email|unique:users',
-        'password' => 'required|string|',
-        'c_password'=>'required|same:password',
-    ]));
+      ]);
+
 
       $user = new User([
           'name' => $request->name,
@@ -59,7 +52,7 @@ class AuthController extends Controller
 
       if($user->save()){
           return response()->json([
-              'message' => 'Successfully created user! Change test.'
+              'message' => 'Successfully created user!'
           ], 201);
       }else{
           return response()->json(['error'=>'Provide proper details']);
@@ -81,10 +74,11 @@ class AuthController extends Controller
   {
 
 
-    $request->validate([
+    $validated = $request->validate([
       'email' => 'required|string|email',
       'password' => 'required|string'
     ]);
+
 
     $credentials = request(['email', 'password']);
     if(!Auth::attempt($credentials))
@@ -118,6 +112,7 @@ class AuthController extends Controller
 */
 public function user(Request $request)
 {
+  Log::info($request);
   $user = Auth::user();
   return response()->json($user);
 }

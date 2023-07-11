@@ -49,8 +49,8 @@ $customizerHidden = 'customizer-hide';
           <form id="formAuthentication" class="mb-3" action="{{url('/auth/register-basic')}}"  method="POST" enctype="multipart/form-data">
           @csrf
             <div class="form-floating form-floating-outline mb-3">
-              <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" autofocus>
-              <label for="username">Username</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" autofocus>
+              <label for="name">Name</label>
             </div>
             <div class="form-floating form-floating-outline mb-3">
               <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">

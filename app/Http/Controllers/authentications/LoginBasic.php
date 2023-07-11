@@ -26,7 +26,13 @@ class LoginBasic extends Controller
         session(['user_access_token' => $result->getData()->access_token]);
         session(['user_token_type' => $result->getData()->token_type]);
 
+        $request->request->add(['Accept' => 'application/json']);
+        $request->request->add(['Authorization' => 'Bearer '.$result->getData()->access_token]);
+        $user = (new AuthController)->user($request);
 
+        session(['user_name' => $user->getData()->name]);
+        session(['user_email' => $user->getData()->email]);
+        session(['user_profile_photo_url' => $user->getData()->profile_photo_url]);
 
         return redirect()->route('dashboard-homepage');
       }

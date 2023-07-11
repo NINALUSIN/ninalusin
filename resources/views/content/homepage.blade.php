@@ -27,16 +27,21 @@ $configData = Helper::appClasses();
 @section('content')
 <div class="row gy-4">
   <!-- Gamification Card -->
-  <div class="col-md-12 col-lg-8">
+  <div class="col-md-12 col-lg-12">
     <div class="card">
       <div class="d-flex align-items-end row">
         <div class="col-md-12 order-2 order-md-1">
           <div class="card-body">
-            <h4 class="card-title pb-xl-2">Congratulations <strong> John!</strong>🎉</h4>
-            <p class="mb-0">You have done <span class="fw-semibold">68%</span>😎 more sales today.</p>
+
+          @if(Session::has('user_access_token'))
 
 
-            View change test.
+            <h4 class="card-title pb-xl-2">Hello <strong> {{ Session::get('user_name')}}!</strong>🎉</h4>
+
+          @else
+          <h4 class="card-title pb-xl-2">Hello <strong> stranger!</strong>🎉</h4>
+          @endif
+
 
             @isset($pageConfigs['variableTest'])
 
@@ -48,12 +53,15 @@ $configData = Helper::appClasses();
 
             <div class="alert alert-success" role="alert">
               Succesfully logged in!<br>
-              {{ Session::get('user_access_token')}}
+              Name: {{ Session::get('user_name')}}<br>
+              Email: {{ Session::get('user_email')}}
             </div>
-
+            @else
+            <br>
+            <p class="mb-0">Please <span class="fw-semibold"> log in </span> to see more.</p>
             @endif
             </p>
-            <a href="javascript:;" class="btn btn-primary">View Profile</a>
+
           </div>
         </div>
 
@@ -62,46 +70,6 @@ $configData = Helper::appClasses();
   </div>
   <!--/ Gamification Card -->
 
-  <!-- Statistics Total Order -->
-  <div class="col-lg-2 col-sm-6">
-    <div class="card h-100">
-      <div class="card-body">
-        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
-          <div class="avatar">
-            <div class="avatar-initial bg-label-primary rounded">
-              <i class="mdi mdi-cart-plus mdi-24px"></i>
-            </div>
-          </div>
-          <div class="d-flex align-items-center">
-            <p class="mb-0 text-success me-1">+22%</p>
-            <i class="mdi mdi-chevron-up text-success"></i>
-          </div>
-        </div>
-        <div class="card-info mt-4 pt-1 mt-lg-1 mt-xl-4">
-          <h5 class="mb-2">155k</h5>
-          <p class="text-muted mb-lg-2 mb-xl-3">Total Orders</p>
-          <div class="badge bg-label-secondary rounded-pill">Last 4 Month</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ Statistics Total Order -->
-
-  <!-- Sessions line chart -->
-  <div class="col-lg-2 col-sm-6">
-    <div class="card h-100">
-      <div class="card-header pb-0">
-        <div class="d-flex align-items-end mb-1 flex-wrap gap-2">
-          <h4 class="mb-0 me-2">$38.5k</h4>
-          <p class="mb-0 text-success">+62%</p>
-        </div>
-        <span class="d-block mb-2 text-muted">Sessions</span>
-      </div>
-      <div class="card-body">
-        <div id="sessions"></div>
-      </div>
-    </div>
-  </div>
  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.
 </div>
 @endsection
