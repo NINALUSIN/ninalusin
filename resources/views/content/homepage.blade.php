@@ -27,7 +27,7 @@ $configData = Helper::appClasses();
 @section('content')
 <div class="row gy-4">
   <!-- Gamification Card -->
-  <div class="col-md-12 col-lg-12">
+  <div class="col-md-12 col-lg-6">
     <div class="card">
       <div class="d-flex align-items-end row">
         <div class="col-md-12 order-2 order-md-1">
@@ -44,18 +44,19 @@ $configData = Helper::appClasses();
           <h4 class="card-title pb-xl-2">Hello <strong> stranger!</strong>🎉</h4>
           @endif
 
+            <p class="mb-0">Dobrodošli na mojo vzorčno stran za spletni razvoj!</p> <br>
 
             @isset($pageConfigs['variableTest'])
 
-            <p class="mb-0">Variable test: <span class="fw-semibold"> {{ $pageConfigs['variableTest'] }}</span></p>
-            <p class="mb-0">DB connection test: <span class="fw-semibold"> {{ $pageConfigs['connection_test'][0]['text'] }}</span></p>
+            <p class="mb-0">Preveri delovanje spremenljivk: <span class="fw-semibold"> {{ $pageConfigs['variableTest'] }}</span></p>
+            <p class="mb-0">Preveri povezavo na podatkovno bazo: <span class="fw-semibold"> {{ $pageConfigs['connection_test'][0]['text'] }}</span></p>
             @endisset
-
+            <br>
             @if(Session::has('user_access_token'))
 
             <div class="alert alert-success" role="alert">
-              Succesfully logged in!<br>
-              Name: {{ Session::get('user_name')}}<br>
+              Prijava v portal je uspešna!<br>
+              Ime: {{ Session::get('user_name')}}<br>
               Email: {{ Session::get('user_email')}}
             </div>
             @else
@@ -63,6 +64,46 @@ $configData = Helper::appClasses();
             <p class="mb-0">Please <span class="fw-semibold"> log in </span> to see more.</p>
             @endif
             </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-lg-6">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+        <div class="col-md-12 order-2 order-md-1">
+          <div class="card-body">
+          <h4 class="card-title pb-xl-2">Hitri pregled</h4>
+
+
+          <ul class="ps-3 mb-4 pt-3">
+            <li class="mb-1">Spletni razvoj
+              <ul class="ps-3 mb-4 pt-3">
+                <li class="mb-1">Laravel</li>
+                <li class="mb-1">PHP</li>
+                <li class="mb-1">HTML</li>
+                <li class="mb-1">CSS</li>
+                <li class="mb-0">Javascript</li>
+              </ul>
+            </li>
+            <li class="mb-1">Razvoj podatkovnih baz
+              <ul class="ps-3 mb-4 pt-3">
+                <li class="mb-1">Oracle</li>
+                <li class="mb-1">DB2</li>
+                <li class="mb-1">Microsoft SQL Server</li>
+                <li class="mb-1">MySQL</li>
+                <li class="mb-0">SQLite</li>
+              </ul>
+            </li>
+          </ul>
+          <h4 class="card-title pb-xl-2">
+
+             <a href="/CV"><button type="button" class="btn rounded-pill btn-primary">Check out my CV</button></a></h4>
+
 
           </div>
         </div>

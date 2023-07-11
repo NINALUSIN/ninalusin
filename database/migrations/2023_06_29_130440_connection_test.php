@@ -18,7 +18,7 @@ return new class extends Migration
 
         DB::table('connection_test')->insert(
             array(
-                'text' => 'Database connection is successful!'
+                'text' => 'Povezava na podatkovno bazo je uspela!!'
             )
         );
     }

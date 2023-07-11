@@ -1,20 +1,20 @@
 {
   "menu": [
     {
-      "name": "Introduction",
+      "name": "Predstavitev",
       "icon": "menu-icon tf-icons mdi mdi-home-outline",
       "slug": "dashboard",
       "login": "0",
       "submenu": [
         {
           "url": "/",
-          "name": "Return to homepage",
+          "name": "Nazaj na domačo stran",
           "icon": "menu-icon tf-icons mdi mdi-home-circle",
           "slug": "dashboard-homepage"
         },
         {
           "url": "/CV",
-          "name": "Check out my CV",
+          "name": "Oglejte si moj življenjepis",
           "icon": "menu-icon tf-icons mdi mdi-file-document",
           "slug": "dashboard-CV"
         }
@@ -67,6 +67,7 @@
         "app",
         "laravel"
       ],
+      "login": "1",
       "submenu": [
         {
           "url": "app/email",
@@ -127,6 +128,7 @@
           "name": "Users",
           "icon": "menu-icon tf-icons mdi mdi-account-outline",
           "slug": "app-user",
+          "login": "1",
           "submenu": [
             {
               "url": "app/user/list",
@@ -216,6 +218,7 @@
         "wizard-ex",
         "modal"
       ],
+      "login": "1",
       "submenu": [
         {
           "name": "User Profile",
@@ -546,6 +549,7 @@
         "extended",
         "icons"
       ],
+      "login": "1",
       "submenu": [
         {
           "name": "Cards",
@@ -820,6 +824,7 @@
         "form-wizard",
         "form"
       ],
+      "login": "1",
       "submenu": [
         {
           "name": "Form Elements",
@@ -947,6 +952,7 @@
         "tables",
         "tables-datatables"
       ],
+      "login": "1",
       "submenu": [
         {
           "url": "tables/basic",
@@ -988,6 +994,7 @@
         "charts",
         "maps"
       ],
+      "login": "1",
       "submenu": [
         {
           "name": "Charts",

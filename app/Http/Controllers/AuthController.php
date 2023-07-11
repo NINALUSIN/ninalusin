@@ -52,10 +52,10 @@ class AuthController extends Controller
 
       if($user->save()){
           return response()->json([
-              'message' => 'Successfully created user!'
+              'message' => 'Uspešna registracija uporabnika!'
           ], 201);
       }else{
-          return response()->json(['error'=>'Provide proper details']);
+          return response()->json(['error'=>'Vpišite pravilne vrednosti']);
       }
     }
 
@@ -85,7 +85,7 @@ class AuthController extends Controller
     {
 
       return response()->json([
-      'message' => 'Login not succesfull.'
+      'message' => 'Prijava ni uspešna.'
       ], 401);
 
 
