@@ -1,27 +1,22 @@
 {
   "menu": [
     {
-      "name": "Dashboards",
+      "name": "Introduction",
       "icon": "menu-icon tf-icons mdi mdi-home-outline",
       "slug": "dashboard",
+      "login": "0",
       "submenu": [
         {
-          "url": "/dashboard/ecommerce",
-          "name": "eCommerce",
-          "icon": "menu-icon tf-icons mdi mdi-chart-timeline-variant",
-          "slug": "dashboard-ecommerce"
+          "url": "/",
+          "name": "Return to homepage",
+          "icon": "menu-icon tf-icons mdi mdi-home-circle",
+          "slug": "dashboard-homepage"
         },
         {
-          "url": "/dashboard/crm",
-          "name": "CRM",
-          "icon": "menu-icon tf-icons mdi mdi-chart-donut",
-          "slug": "dashboard-crm"
-        },
-        {
-          "url": "/dashboard/analytics",
-          "name": "Analytics",
-          "icon": "menu-icon tf-icons mdi mdi-cart-outline",
-          "slug": "dashboard-analytics"
+          "url": "/CV",
+          "name": "Check out my CV",
+          "icon": "menu-icon tf-icons mdi mdi-file-document",
+          "slug": "dashboard-CV"
         }
       ]
     },
@@ -29,6 +24,7 @@
       "name": "Layouts",
       "icon": "menu-icon tf-icons mdi mdi-window-maximize",
       "slug": "layouts",
+      "login": "1",
       "submenu": [
         {
           "url": "layouts/without-menu",

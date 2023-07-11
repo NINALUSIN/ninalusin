@@ -36,7 +36,9 @@ $configData = Helper::appClasses();
           @if(Session::has('user_access_token'))
 
 
-            <h4 class="card-title pb-xl-2">Hello <strong> {{ Session::get('user_name')}}!</strong>🎉</h4>
+            <h4 class="card-title pb-xl-2">
+            <img src="{{ Session::get('user_profile_photo_url')}}" class="rounded-circle"></img>
+            Hello <strong> {{ Session::get('user_name')}}!</strong>🎉</h4>
 
           @else
           <h4 class="card-title pb-xl-2">Hello <strong> stranger!</strong>🎉</h4>

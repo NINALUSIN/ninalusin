@@ -9,8 +9,10 @@ $configData = Helper::appClasses();
 
       {{-- active menu method --}}
       @php
+
         $activeClass = null;
         $currentRouteName =  Route::currentRouteName();
+
 
         if ($currentRouteName === $menu->slug) {
             $activeClass = 'active';
@@ -33,19 +35,42 @@ $configData = Helper::appClasses();
       @endphp
 
       {{-- main menu --}}
-      <li class="menu-item {{$activeClass}}">
-        <a href="{{ isset($menu->url) ? url($menu->url) : 'javascript:void(0);' }}" class="{{ isset($menu->submenu) ? 'menu-link menu-toggle' : 'menu-link' }}" @if (isset($menu->target) and !empty($menu->target)) target="_blank" @endif>
-          @isset($menu->icon)
-          <i class="{{ $menu->icon }}"></i>
-          @endisset
-          <div>{{ isset($menu->name) ? __($menu->name) : '' }}</div>
-        </a>
 
-        {{-- submenu --}}
-        @isset($menu->submenu)
-          @include('layouts.sections.menu.submenu',['menu' => $menu->submenu])
-        @endisset
-      </li>
+      @isset($menu->login)
+        @if($menu->login=="0")
+          <li class="menu-item {{$activeClass}}">
+            <a href="{{ isset($menu->url) ? url($menu->url) : 'javascript:void(0);' }}" class="{{ isset($menu->submenu) ? 'menu-link menu-toggle' : 'menu-link' }}" @if (isset($menu->target) and !empty($menu->target)) target="_blank" @endif>
+              @isset($menu->icon)
+              <i class="{{ $menu->icon }}"></i>
+              @endisset
+              <div>{{ isset($menu->name) ? __($menu->name) : '' }}</div>
+            </a>
+
+            {{-- submenu --}}
+            @isset($menu->submenu)
+              @include('layouts.sections.menu.submenu',['menu' => $menu->submenu])
+            @endisset
+          </li>
+        @else
+          @if(Session::has('user_access_token'))
+            <li class="menu-item {{$activeClass}}">
+                <a href="{{ isset($menu->url) ? url($menu->url) : 'javascript:void(0);' }}" class="{{ isset($menu->submenu) ? 'menu-link menu-toggle' : 'menu-link' }}" @if (isset($menu->target) and !empty($menu->target)) target="_blank" @endif>
+                  @isset($menu->icon)
+                  <i class="{{ $menu->icon }}"></i>
+                  @endisset
+                  <div>{{ isset($menu->name) ? __($menu->name) : '' }}</div>
+                </a>
+
+                {{-- submenu --}}
+                @isset($menu->submenu)
+                  @include('layouts.sections.menu.submenu',['menu' => $menu->submenu])
+                @endisset
+              </li>
+          @endif
+        @endif
+      @endisset
+
+
       @endforeach
     </ul>
   </div>
