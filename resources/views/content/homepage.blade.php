@@ -3,7 +3,7 @@ $configData = Helper::appClasses();
 @endphp
 @extends('layouts/layoutMaster')
 
-@section('title', 'Analytics')
+@section('title', 'Domača stran')
 @section('vendor-style')
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/apex-charts/apex-charts.css')}}" />
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/swiper/swiper.css')}}" />
