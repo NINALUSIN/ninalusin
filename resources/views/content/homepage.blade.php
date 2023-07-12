@@ -41,7 +41,7 @@ $configData = Helper::appClasses();
             Hello <strong> {{ Session::get('user_name')}}!</strong>🎉</h4>
 
           @else
-          <h4 class="card-title pb-xl-2">Hello <strong> stranger!</strong>🎉</h4>
+          <h4 class="card-title pb-xl-2">Zdravo <strong> obiskovalec!</strong>🎉</h4>
           @endif
 
             <p class="mb-0">Dobrodošli na mojo vzorčno stran za spletni razvoj!</p> <br>
@@ -61,7 +61,7 @@ $configData = Helper::appClasses();
             </div>
             @else
             <br>
-            <p class="mb-0">Please <span class="fw-semibold"> log in </span> to see more.</p>
+            <p class="mb-0">Prosim <span class="fw-semibold"> prijavite se </span> za polni pregled strani.</p>
             @endif
             </p>
 
@@ -102,7 +102,7 @@ $configData = Helper::appClasses();
           </ul>
           <h4 class="card-title pb-xl-2">
 
-             <a href="/CV"><button type="button" class="btn rounded-pill btn-primary">Check out my CV</button></a></h4>
+             <a href="/CV"><button type="button" class="btn rounded-pill btn-primary">Poglejte moj CV</button></a></h4>
 
 
           </div>

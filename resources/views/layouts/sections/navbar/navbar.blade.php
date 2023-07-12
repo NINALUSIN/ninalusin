@@ -73,7 +73,7 @@ $navbarDetached = ($navbarDetached ?? '');
                       @if (Auth::check())
                       {{ Auth::user()->name }}
                       @else
-                      Unauthorised
+                      Neprijavljen
                       @endif
                     </span>
                      <!--<small class="text-muted">Admin</small>-->
@@ -87,7 +87,7 @@ $navbarDetached = ($navbarDetached ?? '');
             <li>
               <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class='mdi mdi-logout me-2'></i>
-                <span class="align-middle">Logout</span>
+                <span class="align-middle">Odjava</span>
               </a>
             </li>
             <form method="POST" id="logout-form" action="{{ route('logout') }}">
@@ -97,7 +97,7 @@ $navbarDetached = ($navbarDetached ?? '');
             <li>
               <a class="dropdown-item" href="{{ Route::has('auth-login-basic') ? route('auth-login-basic') : url('auth/login-basic') }}">
                 <i class='mdi mdi-login me-2'></i>
-                <span class="align-middle">Login</span>
+                <span class="align-middle">Prijava</span>
               </a>
             </li>
             @endif

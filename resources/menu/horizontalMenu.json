@@ -17,6 +17,12 @@
           "name": "Oglejte si moj življenjepis",
           "icon": "menu-icon tf-icons mdi mdi-file-document",
           "slug": "dashboard-CV"
+        },
+        {
+          "url": "/javascript",
+          "name": "Primer Javascript funkcionalnosti",
+          "icon": "menu-icon tf-icons mdi  mdi-script-text",
+          "slug": "dashboard-javascript"
         }
       ]
     },
@@ -595,7 +601,7 @@
           ]
         },
         {
-          "name": "User interface",
+          "name": "User interface 1/2",
           "icon": "menu-icon tf-icons mdi mdi-palette-swatch-outline",
           "slug": "ui",
           "submenu": [
@@ -658,7 +664,14 @@
               "name": "Modals",
               "icon": "menu-icon tf-icons mdi mdi-circle-medium",
               "slug": "ui-modals"
-            },
+            }
+          ]
+        },
+        {
+          "name": "User interface 2/2",
+          "icon": "menu-icon tf-icons mdi mdi-palette-swatch-outline",
+          "slug": "ui",
+          "submenu": [
             {
               "url": "ui/navbar",
               "name": "Navbar",
