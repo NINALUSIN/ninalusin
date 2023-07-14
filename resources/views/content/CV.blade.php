@@ -163,7 +163,7 @@
 
 
           </div>
-          <div class="timeline-event-time">05/2020 <br>-<br> 05/2022</div>
+          <div id="timeline-event-time" class="timeline-event-time">05/2020 - 05/2022 <br><br></div>
         </div>
       </li>
 
@@ -203,7 +203,7 @@
             </div>
 
           </div>
-          <div class="timeline-event-time">03/2018 <br>-<br> 05/2020</div>
+          <div id="timeline-event-time-left" class="timeline-event-time">03/2018 - 05/2020</div>
         </div>
       </li>
 
@@ -247,7 +247,7 @@
 
           </div>
 
-          <div class="timeline-event-time">04/2016  <br>-<br> 11/2017 </div>
+          <div class="timeline-event-time">04/2016  - 11/2017 </div>
         </div>
       </li>
 
@@ -297,7 +297,7 @@
 
           </div>
 
-          <div class="timeline-event-time">11/2014 <br>-<br> 03/2016 </div>
+          <div class="timeline-event-time" id="timeline-event-time-left">11/2014 - 03/2016 </div>
         </div>
       </li>
 
@@ -340,7 +340,7 @@
 
           </div>
 
-          <div class="timeline-event-time">08/2012 <br>-<br> 03/2014  </div>
+          <div class="timeline-event-time">08/2012 - 03/2014  </div>
         </div>
       </li>
 
