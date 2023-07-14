@@ -69,6 +69,22 @@ $configData = Helper::appClasses();
     </div>
   </div>
 
+  <div class="col-md-12 col-lg-12">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+        <div class="col-md-12 order-2 order-md-1">
+          <div class="card-body">
+
+            TEST
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!--/ Gamification Card -->
 
  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.
