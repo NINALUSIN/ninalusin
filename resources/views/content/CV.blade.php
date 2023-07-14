@@ -88,7 +88,7 @@
       <div class="card-body">
         <small class="card-text text-uppercase text-muted">Splošni pregled</small>
         <ul class="list-unstyled mb-0 mt-3 pt-1">
-        <li class="d-flex align-items-center mb-3"><span class="fw-semibold mx-2">Web Development</span></li>
+        <li class="d-flex align-items-center mb-3"><span class="fw-semibold mx-2">Spletni razvoj</span></li>
 
           <li class="d-flex align-items-center mb-3">Laravel</li>
           <li class="d-flex align-items-center mb-3">HTML</li>
@@ -96,7 +96,7 @@
           <li class="d-flex align-items-center mb-3">CSS</li>
           <li class="d-flex align-items-center mb-3">Javascript</li>
           <br>
-          <li class="d-flex align-items-center mb-3"><span class="fw-semibold mx-2">Database Development</span></li>
+          <li class="d-flex align-items-center mb-3"><span class="fw-semibold mx-2">Razvoj podatkovnih baz</span></li>
           <li class="d-flex align-items-center mb-3">Oracle</li>
           <li class="d-flex align-items-center mb-3">DB2</li>
           <li class="d-flex align-items-center mb-3">Microsoft SQL Server</li>
