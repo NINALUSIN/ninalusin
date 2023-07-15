@@ -26,7 +26,25 @@ $configData = Helper::appClasses();
 
 @section('content')
 <div class="row gy-4">
-  <!-- Gamification Card -->
+  <div class="col-md-12 col-lg-12">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+        <div class="col-md-12 order-2 order-md-1">
+          <div class="card-body">
+          <h4 class="mb-0">Današnji datum</h4> <br>
+            <div class="alert alert-outline-success" role="alert" id="javascript-date" disabled>
+
+              </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <div class="col-md-12 col-lg-12">
     <div class="card">
       <div class="d-flex align-items-end row">

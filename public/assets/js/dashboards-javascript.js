@@ -11,6 +11,10 @@ document.querySelector('#characterCounter').addEventListener('input', characterC
 document.querySelector('#sumFirstNumber').addEventListener('input', sumCalculator);
 document.querySelector('#sumSecondNumber').addEventListener('input', sumCalculator);
 
+//Show current date
+
+document.querySelector('#javascript-date').innerHTML = new Date();
+
 function characterCounter() {
   document.querySelector('#characterCounterShow').innerHTML =
     'Število znakov: ' + document.querySelector('#characterCounter').value.length;
