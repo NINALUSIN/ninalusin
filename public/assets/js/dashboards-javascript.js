@@ -18,6 +18,10 @@ document.querySelector('#sumSecondNumber').addEventListener('input', calculator)
 document.querySelector('#formRangeShape').addEventListener('input', objectManipulation);
 document.querySelector('#formRangeSize').addEventListener('input', objectManipulation);
 document.querySelector('#shapeColor').addEventListener('input', objectManipulation);
+
+//Make a list
+//document.querySelector('#listInputButton').addEventListener('click', listMaker);
+
 //
 function stringManipulation() {
   let string = document.querySelector('#characterCounter').value;
@@ -62,3 +66,10 @@ function objectManipulation() {
   document.querySelector('#controlledObject').style.height = sizeShape;
   document.querySelector('#controlledObject').style.background = color;
 }
+/*
+function listMaker() {
+  let newListItem = document.querySelector('#listInput').value;
+  console.log(newListItem);
+  console.log(document.querySelector('#listRadios').innerHTML);
+}
+*/

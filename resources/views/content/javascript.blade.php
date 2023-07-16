@@ -183,19 +183,15 @@ $configData = Helper::appClasses();
                 <div class="form-floating form-floating-outline">
                   Ostanek deljenja
                   <input type="text" class="form-control" id="modResult"  disabled />
-
                 </div>
               </div>
             </div>
-
           </div>
-
-
         </div>
-
       </div>
     </div>
   </div>
+
 
   <div class="col-md-12 col-lg-12">
     <div class="card">
@@ -204,7 +200,6 @@ $configData = Helper::appClasses();
         <div class="col-md-6 order-2 order-md-1">
           <div class="card-body">
             <h4 class="mb-0">Mini nadzorna plošča objekta "div"</h4> <br>
-
             <div class="mb-3">
               <label for="formRangeShape" class="form-label">Oblika</label>
               <input type="range" class="form-range" id="formRangeShape"  min="1" max="50" value="50">
@@ -213,12 +208,11 @@ $configData = Helper::appClasses();
               <label for="formRangeSize" class="form-label">Velikost</label>
               <input type="range" class="form-range" id="formRangeSize"  min="50" max="100" value="100">
             </div>
-          </div>
+            <div class="form-floating form-floating-outline mb-3">
 
-          <div class="form-floating form-floating-outline mb-3">
-
-            <input class="form-control" type="color" id="shapeColor" value="#666cff"/>
-            <label for="shapeColor">Barva</label>
+              <input class="form-control" type="color" id="shapeColor" value="#666cff"/>
+              <label for="shapeColor">Barva</label>
+            </div>
           </div>
         </div>
 
@@ -226,8 +220,60 @@ $configData = Helper::appClasses();
           <div class="card-body">
 
             <center>
-            <div id="controlledObject">
+            <div id="controlledObject"></div>
             </center>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<!--
+  <div class="col-md-12 col-lg-12">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+        <div class="col-md-12 order-2 order-md-1">
+          <div class="card-body">
+            <div class="row g-4">
+              <h4 class="mb-0">Seznam</h4> <br>
+              <div class="col-md-10 form-floating form-floating-outline">
+                <input type="text" class="form-control" id="listInput" placeholder="Vnesi točko na seznamu"  />
+                <label for="listInput">Besedilo</label>
+              </div>
+              <div class="col-md-2 form-floating form-floating-outline">
+                <button type="button" class="btn rounded-pill btn-success" id="listInputButton">Shrani</button>
+              </div>
+
+              <div class="col-md-10 form-floating form-floating-outline">
+                <form id="formListItems" class="mb-3" action="{{url('/javascript')}}" method="post" enctype="multipart/form-data">
+                  @csrf
+                    <fieldset id="listRadios">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="favorite_pet" value="Cats">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Cats
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="favorite_pet" value="Dogs">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Dogs
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="favorite_pet" value="Birds">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Birds
+                        </label>
+                        </div>
+                      <br>
+                      <button class="btn btn-danger" id="listDelete"> Briši</button>
+                    </fieldset>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -236,8 +282,11 @@ $configData = Helper::appClasses();
     </div>
   </div>
 
+-->
+
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.
+
+</div>
   <!--/ Gamification Card -->
 
- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>.
-</div>
 @endsection
