@@ -44,21 +44,21 @@ $customizerHidden = 'customizer-hide';
         <!-- /Logo -->
 
         <div class="card-body mt-2">
-          <h4 class="mb-2 fw-semibold">Welcome to {{config('variables.templateName')}}! 👋</h4>
-          <p class="mb-4">Please sign-in to your account and start the adventure</p>
+          <h4 class="mb-2 fw-semibold">Dobrodošli na stran {{config('variables.templateName')}}! 👋</h4>
+
 
           <form id="formAuthentication" class="mb-3" action="{{url('/auth/login-basic')}}" method="post" enctype="multipart/form-data">
           @csrf
             <div class="form-floating form-floating-outline mb-3">
-              <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email or username" autofocus>
-              <label for="email">Email or Username</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Vnesite email" autofocus>
+              <label for="email">Email</label>
             </div>
             <div class="mb-3">
               <div class="form-password-toggle">
                 <div class="input-group input-group-merge">
                   <div class="form-floating form-floating-outline">
                     <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
-                    <label for="password">Password</label>
+                    <label for="password">Geslo</label>
                   </div>
                   <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
                 </div>

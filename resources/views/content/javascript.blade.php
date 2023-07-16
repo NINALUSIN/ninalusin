@@ -68,7 +68,7 @@ $configData = Helper::appClasses();
       <div class="d-flex align-items-end row">
         <div class="col-md-12 order-2 order-md-1">
           <div class="card-body">
-            <h4 class="mb-0">Števec znakov in prvi/zadnji znak</h4> <br>
+            <h4 class="mb-0">Delo s Stringi</h4> <br>
 
             <div class="form-floating form-floating-outline">
               <input type="text" class="form-control" id="characterCounter" placeholder="Vnesite besedilo" aria-describedby="floatingInputHelp" />
@@ -86,6 +86,18 @@ $configData = Helper::appClasses();
               Zadnji znak: /
             </div>
 
+            <div class="alert alert-outline-warning" role="alert" id="upperCaseString">
+              Uppercase:
+            </div>
+
+            <div class="alert alert-outline-warning" role="alert" id="lowerCaseString">
+              Lowercase:
+            </div>
+
+            <div class="alert alert-outline-warning" role="alert" id="halveString">
+              Polovica besedila:
+            </div>
+
           </div>
 
 
@@ -101,40 +113,79 @@ $configData = Helper::appClasses();
         <div class="col-md-12 order-2 order-md-1">
           <div class="card-body">
             <div class="row g-4">
-              <h4 class="mb-0">Kalkulator - seštevanje</h4> <br>
+              <h4 class="mb-0">Kalkulator</h4> <br>
 
-              <div class="col-md-2">
+              <div class="col-md-3">
                 <div class="form-floating form-floating-outline">
                   <input type="number" class="form-control" id="sumFirstNumber" placeholder="Vnesite število" aria-describedby="floatingInputHelp" />
                   <label for="sumFirstNumber">Prvo število</label>
                   <div id="sumFirstNumber" class="form-text">Vnesite številko</div>
                 </div>
               </div>
-              <div class="col-md-1">
-                +
-              </div>
-              <div class="col-md-2">
+              <div class="col-md-3">
                 <div class="form-floating form-floating-outline">
                   <input type="number" class="form-control" id="sumSecondNumber" placeholder="Vnesite število" aria-describedby="floatingInputHelp" />
                   <label for="sumSecondNumber">Drugo število</label>
                   <div id="sumSecondNumber" class="form-text">Vnesite število</div>
                 </div>
               </div>
-              <div class="col-md-1">
-                =
-              </div>
+
+            </div>
+            <div class="row g-4">
               <div class="col-md-2">
+                <br>
                 <div class="form-floating form-floating-outline">
+                  Seštevek
                   <input type="text" class="form-control" id="sumResult"  disabled />
 
                 </div>
               </div>
+
             </div>
 
+            <div class="row g-4">
+              <div class="col-md-2">
+                <br>
+                <div class="form-floating form-floating-outline">
+                  Razlika
+                  <input type="text" class="form-control" id="difResult"  disabled />
 
+                </div>
+              </div>
 
+            </div>
+            <div class="row g-4">
+              <div class="col-md-2">
+                <br>
+                <div class="form-floating form-floating-outline">
+                  Zmnožek
+                  <input type="text" class="form-control" id="productResult"  disabled />
 
+                </div>
+              </div>
 
+            </div>
+            <div class="row g-4">
+              <div class="col-md-2">
+                <br>
+                <div class="form-floating form-floating-outline">
+                  Količnik
+                  <input type="text" class="form-control" id="quotientResult"  disabled />
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row g-4">
+              <div class="col-md-2">
+                <br>
+                <div class="form-floating form-floating-outline">
+                  Ostanek deljenja
+                  <input type="text" class="form-control" id="modResult"  disabled />
+
+                </div>
+              </div>
+            </div>
 
           </div>
 

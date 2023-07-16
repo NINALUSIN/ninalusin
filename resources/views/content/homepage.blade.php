@@ -102,7 +102,7 @@ $configData = Helper::appClasses();
           </ul>
           <h4 class="card-title pb-xl-2">
 
-             <a href="/CV"><button type="button" class="btn rounded-pill btn-primary">Poglejte moj CV</button></a></h4>
+             <a href="/CV"><button type="button" class="btn rounded-pill btn-primary">Oglejte si moj življenjepis</button></a></h4>
 
 
           </div>

@@ -19,8 +19,7 @@ class RegisterBasic extends Controller
     {
 
       $result = (new AuthController)->register($request);
-      Log::info('(new AuthController)->register($request);');
-      Log::info($result);
+
       return redirect()->route('auth-login-basic');
     }
     else{

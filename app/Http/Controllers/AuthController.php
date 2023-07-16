@@ -81,6 +81,7 @@ class AuthController extends Controller
 
 
     $credentials = request(['email', 'password']);
+
     if(!Auth::attempt($credentials))
     {
 
