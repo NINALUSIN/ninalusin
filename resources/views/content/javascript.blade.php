@@ -13,6 +13,7 @@ $configData = Helper::appClasses();
 <!-- Page -->
 <link rel="stylesheet" href="{{asset('assets/vendor/css/pages/cards-statistics.css')}}">
 <link rel="stylesheet" href="{{asset('assets/vendor/css/pages/cards-analytics.css')}}">
+<link rel="stylesheet" href="{{asset('assets/vendor/css/pages/dashboards-javascript.css')}}">
 @endsection
 
 @section('vendor-script')
@@ -68,7 +69,7 @@ $configData = Helper::appClasses();
       <div class="d-flex align-items-end row">
         <div class="col-md-12 order-2 order-md-1">
           <div class="card-body">
-            <h4 class="mb-0">Delo s Stringi</h4> <br>
+            <h4 class="mb-0">Delo z besedili</h4> <br>
 
             <div class="form-floating form-floating-outline">
               <input type="text" class="form-control" id="characterCounter" placeholder="Vnesite besedilo" aria-describedby="floatingInputHelp" />
@@ -190,6 +191,45 @@ $configData = Helper::appClasses();
           </div>
 
 
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-lg-12">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+
+        <div class="col-md-6 order-2 order-md-1">
+          <div class="card-body">
+            <h4 class="mb-0">Mini nadzorna plošča objekta "div"</h4> <br>
+
+            <div class="mb-3">
+              <label for="formRangeShape" class="form-label">Oblika</label>
+              <input type="range" class="form-range" id="formRangeShape"  min="1" max="50" value="50">
+            </div>
+            <div class="mb-3">
+              <label for="formRangeSize" class="form-label">Velikost</label>
+              <input type="range" class="form-range" id="formRangeSize"  min="50" max="100" value="100">
+            </div>
+          </div>
+
+          <div class="form-floating form-floating-outline mb-3">
+
+            <input class="form-control" type="color" id="shapeColor" value="#666cff"/>
+            <label for="shapeColor">Barva</label>
+          </div>
+        </div>
+
+        <div class="col-md-6 order-2 order-md-1">
+          <div class="card-body">
+
+            <center>
+            <div id="controlledObject">
+            </center>
+            </div>
+          </div>
         </div>
 
       </div>
