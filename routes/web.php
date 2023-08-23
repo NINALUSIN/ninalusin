@@ -22,6 +22,7 @@ Route::get('/', $controller_path . '\HomePage@index')->name('dashboard-homepage'
 Route::get('/CV', $controller_path . '\CV@index')->name('CV');
 //Route::get('/javascript', $controller_path . '\Javascript@index')->name('javascript');
 Route::match(['get', 'post'], '/javascript', $controller_path . '\Javascript@index')->name('javascript');
+Route::match(['get', 'post'], '/vueJS', $controller_path . '\VueJS@index')->name('VueJS');
 
 Route::get('/dashboard/analytics', $controller_path . '\dashboard\Analytics@index')->name('dashboard-analytics');
 Route::get('/dashboard/crm', $controller_path . '\dashboard\Crm@index')->name('dashboard-crm');

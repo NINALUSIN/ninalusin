@@ -3177,6 +3177,25 @@ function withinMaxClamp(min, value, max) {
 
 /***/ }),
 
+/***/ "./resources/assets/vendor/js/bootstrap.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/vendor/js/bootstrap.js ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "bootstrap": function() { return /* reexport module object */ bootstrap__WEBPACK_IMPORTED_MODULE_0__; }
+/* harmony export */ });
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+
+try {
+  window.bootstrap = bootstrap__WEBPACK_IMPORTED_MODULE_0__;
+} catch (e) {}
+
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.esm.js":
 /*!*********************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.esm.js ***!
@@ -3726,23 +3745,23 @@ var EventHandler = {
 };
 function hydrateObj(obj, meta) {
   var _loop = function _loop() {
-    var _ref2 = _Object$entries[_i5];
-    _ref3 = _slicedToArray(_ref2, 2);
-    var key = _ref3[0];
-    var value = _ref3[1];
-    try {
-      obj[key] = value;
-    } catch (_unused) {
-      Object.defineProperty(obj, key, {
-        configurable: true,
-        get: function get() {
-          return value;
-        }
-      });
-    }
-  };
+      var _ref2 = _Object$entries[_i5];
+      _ref3 = _slicedToArray(_ref2, 2);
+      var key = _ref3[0];
+      var value = _ref3[1];
+      try {
+        obj[key] = value;
+      } catch (_unused) {
+        Object.defineProperty(obj, key, {
+          configurable: true,
+          get: function get() {
+            return value;
+          }
+        });
+      }
+    },
+    _ref3;
   for (var _i5 = 0, _Object$entries = Object.entries(meta || {}); _i5 < _Object$entries.length; _i5++) {
-    var _ref3;
     _loop();
   }
   return obj;
@@ -8480,25 +8499,6 @@ enableDismissTrigger(Toast);
  */
 
 defineJQueryPlugin(Toast);
-
-
-/***/ }),
-
-/***/ "./resources/assets/vendor/js/bootstrap.js":
-/*!*************************************************!*\
-  !*** ./resources/assets/vendor/js/bootstrap.js ***!
-  \*************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "bootstrap": function() { return /* reexport module object */ bootstrap__WEBPACK_IMPORTED_MODULE_0__; }
-/* harmony export */ });
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-
-try {
-  window.bootstrap = bootstrap__WEBPACK_IMPORTED_MODULE_0__;
-} catch (e) {}
 
 
 /***/ }),
